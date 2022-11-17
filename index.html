@@ -6,11 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RPS</title>
-  <script src="javascript.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="javascript.js" defer></script>
 </head>
 
 <body>
-
+  <div id="results">
+    <h1>RESULTS</h1>
+    <div id="counterNames">
+      <p class="counterName">Player Win Count</p>
+      <p class="counterName">Draw Count</p>
+      <p class="counterName">Computer Win Count</p>
+    </div>
+    <div id="counters">
+      <p class="counter" id="playerWinCounter">0</p>
+      <p class="counter" id="drawCounter">0</p>
+      <p class="counter" id="computerWinCounter">0</p>
+    </div>
+    <p id="announceWinner"></p>
+  </div>
+  <div id="buttons">
+    <h1>PLAYER CHOICE</h1>
+    <input class="button" id="rockButton" type="image" src="./images/rock.png" />
+    <input class="button" id="paperButton" type="image" src="./images/paper.png" />
+    <input class="button" id="scissorsButton" type="image" src="./images/scissors.png" />
+  </div>
+  <div id="currentResults">
+    <p id="thisRoundResult"></p>
+  </div>
 </body>
 
 </html>
